@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppLegalKnowledge.Register"
+             BackgroundColor="Transparent"
+             Title="">
+    <VerticalStackLayout 
+        BackgroundColor="Black"
+        Spacing="15"
+        Padding="0,30"
+        Margin="0,0,0,0"
+        VerticalOptions="Start">
+
+        <Image
+            Source="compliant.png" 
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="200"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Huquqiy Zakovat!"
+            SemanticProperties.HeadingLevel="Level1"
+            TextColor="White"
+            FontAttributes="Bold"
+            Margin="0,5,0,0"
+            FontSize="32"
+            HorizontalOptions="Center" />
+
+        <Label
+            Text="Ro`yhatdan o`tish"
+            SemanticProperties.HeadingLevel="Level1"
+            TextColor="#aa9166"
+            FontAttributes="Bold"
+            Margin="0,-10,0,0"
+            FontSize="22"
+            HorizontalOptions="Center" />
+
+        <Border StrokeThickness="1"
+            Margin="0,20,0,0"
+            Background="Transparent"
+            Padding="8,4"
+            WidthRequest="300"
+            Stroke="#aa9166"
+            HorizontalOptions="Center">    
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"
+                     WidthRequest="300"
+                     />
+            </Border.StrokeShape>
+            <Entry 
+                x:Name="NameEditReg"
+                Placeholder="Ism kiriting ..." 
+                TextColor="White"
+                FontSize="18" />
+        </Border>
+
+        <Border StrokeThickness="1"
+           
+            Background="Transparent"
+            Padding="8,4"
+            WidthRequest="300"
+            Stroke="#aa9166"
+            HorizontalOptions="Center">     
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"
+                            WidthRequest="300"
+                            />
+            </Border.StrokeShape>
+            <Entry 
+                x:Name="EmailEditReg"
+                Placeholder="Emailni kiriting ..." 
+                TextColor="White"
+                FontSize="18" />    
+        </Border>
+        <Border StrokeThickness="1"
+             
+             Background="Transparent"
+             Padding="8,4"
+             WidthRequest="300"
+             Stroke="#aa9166"
+             HorizontalOptions="Center">    
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"
+                             WidthRequest="300"
+                             />
+            </Border.StrokeShape>
+            <Entry 
+                 x:Name="PasswordEditReg"
+                 Placeholder="Parolni kiriting ..."
+                 TextColor="White"
+                 IsPassword="True"
+                 FontAutoScalingEnabled="True"
+                 FontSize="18"/>    
+        </Border>
+        <Border StrokeThickness="1"
+     
+             Background="Transparent"
+             Padding="8,4"
+             WidthRequest="300"
+             Stroke="#aa9166"
+             HorizontalOptions="Center">    
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10"
+                     WidthRequest="300"
+                     />
+            </Border.StrokeShape>
+            <Entry 
+                x:Name="PasswordEditReg1"
+                Placeholder="Parolni qayta kiriting ..."
+                TextColor="White"
+                IsPassword="True"
+                FontAutoScalingEnabled="True"
+                FontSize="18"/>
+        </Border>
+
+        <Button
+            Margin="0,40,0,0"
+            x:Name="RegBtn"
+            Text="Ro`yhatdan o`tish"
+            BackgroundColor="#aa9166" 
+            Clicked="RegBtn_Clicked"
+            WidthRequest="300"
+            HorizontalOptions="Center"
+            CornerRadius="25"
+            FontSize="20"/>
+        <Button
+            Margin="0,-20,0,0"
+            x:Name="EnterBtn"
+    
+            Text="Kirish"
+            TextColor="White"
+            BackgroundColor="Transparent" 
+            Clicked="EnterBtn_Clicked"
+            WidthRequest="200"
+    
+            FontSize="18"/> 
+
+    </VerticalStackLayout>
+</ContentPage>
